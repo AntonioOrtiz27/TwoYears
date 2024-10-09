@@ -1,0 +1,257 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+/* Parallax background */
+
+#particles-js {
+     background: linear-gradient(135deg, #fdfdfd 0%, #f0d4fd 100%);
+     background-size: 400% 400%;
+     animation: gradientAnimation 12s ease infinite;
+}
+
+@keyframes gradientAnimation {
+     0% {
+          background-position: 0% 50%;
+     }
+
+     50% {
+          background-position: 100% 50%;
+     }
+
+     100% {
+          background-position: 0% 50%;
+     }
+}
+#particles-js .particles {
+     filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+     /* Sombra de color rosado */
+}
+
+.titulo {
+     font-size: 55px;
+     text-transform: uppercase;
+     letter-spacing: 7px;
+}
+
+.galeria img {
+     box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+     border-radius: 15px;
+     cursor: pointer;
+}
+
+.materialbox-caption {
+     bottom: 30px;
+     right: 0;
+     width: 40%;
+     height: auto;
+     padding: 10px;
+     margin: auto;
+     background: #000;
+     box-shadow: 5px 5px #fff;
+     font-size: 20px;
+     color: #fff;
+     line-height: 28px;
+}
+
+.galeria .col {
+     margin-bottom: 20px;
+}
+#particles-js {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     color: #ff0000;
+     /* Asegúrate de que esté detrás de todo el contenido */
+}
+
+.titulof{
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+     margin-top: 10%;
+     position: relative;
+}
+
+/* Efecto romántico */
+  /* Efecto romántico */
+  .romantic-heading {
+       font-family: 'Great Vibes', cursive;
+       color: #ffffff;
+       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+       background: linear-gradient(90deg, #efccff 0%, rgb(252, 245, 254) 100%);
+       padding: 20px;
+       border-radius: 15px;
+       display: inline-block;
+       margin-top: 180px;
+  }
+
+  /* Caja de tick y cruz */
+  .response-box {
+       display: flex;
+       justify-content: center;
+       margin-top: 10px;
+       font-size: 50px;
+  }
+
+  .tick,
+  .cross {
+       cursor: pointer;
+       margin: 0 20px;
+  }
+
+  /* Estilo del mensaje de respuesta correcta */
+  #correct-response {
+       background-color: rgb(242, 219, 255);
+       padding: 20px;
+       border-radius: 10px;
+       margin-top: 20px;
+       animation: fadeIn 1s ease-out forwards;
+  }
+
+  .hidden {
+       display: none;
+  }
+
+  /* Movimiento de la cruz */
+  .move {
+       position: relative;
+       animation: moveCross 1s infinite;
+  }
+
+  .romantic-heading {
+       transition: transform 3.3s ease, color 3.3s ease;
+  }
+
+  .romantic-heading:hover {
+       transform: scale(1.05);
+       color: #dcc0fb;
+  }
+
+  .tick,
+  .cross {
+       transition: transform 0.2s ease;
+  }
+
+  .tick:hover,
+  .cross:hover {
+       transform: scale(1.2);
+  }
+
+  @keyframes moveCross {
+       0% {
+            left: 0;
+            top: 0;
+       }
+
+       25% {
+            left: 50px;
+            top: -30px;
+       }
+
+       50% {
+            left: -50px;
+            top: 50px;
+       }
+
+       75% {
+            left: 30px;
+            top: 30px;
+       }
+
+       100% {
+            left: 0;
+            top: 0;
+       }
+  }
+
+  /* Animación de fadeIn */
+  @keyframes fadeIn {
+       0% {
+            opacity: 0;
+       }
+
+       100% {
+            opacity: 1;
+       }
+  }
+
+
+
+.collages {
+     text-align: center;
+     clear: both;
+     font-family: 'Great Vibes', cursive;
+     color: white;
+}
+
+.collage-grid {
+     margin-top: 15%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+     gap: 40px;
+     justify-items: center;
+     /* Asegura que los elementos dentro del grid se centren */
+     align-items: center;
+     /* Alinea verticalmente los elementos dentro de las celdas */
+     position: relative;
+     left: 50px;
+}
+
+.collage-item {
+     display: flex;
+     /* Usar flex para centrar el contenido dentro de cada celda */
+     justify-content: center;
+     /* Centra horizontalmente el contenido */
+     align-items: center;
+     /* Centra verticalmente el contenido */
+}
+
+.collage-item img {
+     max-width: 75%;
+     height: auto;
+     border: 4px solid #ffffff;
+     transition: transform 0.3s ease;
+}
+
+/* Efecto zoom al pasar el ratón */
+.collage-item img:hover {
+     transform: scale(1.05);
+}
+
+.row{
+     margin-bottom: 1% !important;
+}
+
+
+
+@media screen and (max-width: 600px){
+     .materialbox-caption {
+          width: 100%;
+     }
+     .collage-grid{
+          left: 20px;
+     }
+     .h2text{
+          font-size: 30px;
+          font-weight: bold;
+     }
+     .titulo{
+          font-size: 35px; 
+     }
+}
+
+@media screen and (max-width: 992px){
+     .materialbox-caption {
+          width: 100%;
+     }
+     .collage-grid {
+          left: 20px;
+     }
+     .h2text {
+          font-size: 30px;
+          font-weight: bold;
+     }
+}
